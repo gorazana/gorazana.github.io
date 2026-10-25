@@ -73,3 +73,48 @@ if(form){
  if(document.readyState!=='loading'){initMega();initTools();}
  else document.addEventListener('DOMContentLoaded',function(){initMega();initTools();});
 })();
+
+/* ===== build-blocks wizard (delegated; reads inline catalog island) ===== */
+(function(){
+ var GOAL={api:['identity','trust','foundation','connectivity'],
+  saas:['identity','trust','foundation','governance','operations'],
+  content:['content','foundation','experience','experiences'],
+  admin:['foundation','experience','experiences','governance'],
+  commerce:['commercial','finance','content','identity'],
+  learning:['education','content','identity'],
+  ops:['operations','governance','connectivity','foundation'],
+  '':['foundation','identity','trust']};
+ var AVL={preview:'Available 0.x',source:'Source preview',research:'Research'};
+ var KINDS=[['package','Packages'],['business-module','Business modules'],['tool','Developer tools'],['composition','Compositions']];
+ function esc(s){return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+ function families(){
+  var fam={}; document.querySelectorAll('.wz-check input:checked').forEach(function(c){c.value.split(',').forEach(function(f){fam[f]=1;});});
+  var g=document.getElementById('wz-goal'); var goal=g?g.value:'';
+  if(!Object.keys(fam).length)(GOAL[goal]||GOAL['']).forEach(function(f){fam[f]=1;});
+  return fam;
+ }
+ function render(){
+  var island=document.getElementById('gz-catalog'), out=document.getElementById('wz-results');
+  if(!island||!out) return;
+  var DATA; try{DATA=JSON.parse(island.textContent||'[]');}catch(e){return;}
+  var fam=families(), hits=DATA.filter(function(e){return fam[e.family];});
+  var html='<div class="wz-count">'+hits.length+' matching parts for your selection</div>';
+  KINDS.forEach(function(k){
+   var gg=hits.filter(function(e){return e.kind===k[0];}); if(!gg.length)return;
+   html+='<div class="wz-group"><h4>'+k[1]+' ('+gg.length+')</h4>';
+   gg.forEach(function(e){
+    var cls=e.av==='preview'?'avail':(e.av==='source'?'source':'research');
+    var vis=e.vis==='private'?'Private source, access required':(e.av==='research'?'Specification, not released':'');
+    html+='<div class="wz-item"><a class="n" href="components/'+e.id+'.html">'+esc(e.name)+'</a>'
+      +'<div class="meta"><span class="badge '+cls+'">'+(AVL[e.av]||e.av)+'</span>'
+      +(e.ver?'<span class="badge ver">'+esc(e.ver)+'</span>':'')
+      +(vis?'<span class="micro">'+vis+'</span>':'')+'</div>'
+      +'<div class="s">'+esc(e.summary)+'</div></div>';
+   });
+   html+='</div>';
+  });
+  if(!hits.length)html+='<p class="wz-empty">Pick at least one capability, or choose what you are building, to see matching parts.</p>';
+  out.innerHTML=html; out.hidden=false; out.scrollIntoView({behavior:'smooth',block:'nearest'});
+ }
+ document.addEventListener('click',function(e){ if(e.target.closest('#wz-go')){ e.preventDefault(); render(); }});
+})();
