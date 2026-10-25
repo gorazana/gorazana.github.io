@@ -45,8 +45,8 @@ a{color:inherit}a:hover{color:var(--teal)}
 .nav>a:hover{color:var(--ink)}
 .gh-link{display:inline-flex;align-items:center;color:#36565f;padding:6px}
 .gh-link:hover{color:var(--ink)}
-.spon-btn{display:inline-flex;align-items:center;background:var(--teal-2);color:#eafff8;border:0;border-radius:8px;
-  padding:8px 15px;font-size:13px;font-weight:600;text-decoration:none}
+.spon-btn{display:inline-flex;align-items:center;background:var(--teal-2);color:#f1fffb;border:0;border-radius:8px;
+  padding:7px 14px;font-size:12.5px;font-weight:500;letter-spacing:.005em;text-decoration:none}
 .spon-btn:hover{background:#0f7a66;color:#fff}
 .spon-btn .shb{display:inline-flex;width:14px;height:14px;margin-right:7px}
 .spon-btn .shb svg{width:14px;height:14px}
@@ -203,6 +203,7 @@ a{color:inherit}a:hover{color:var(--teal)}
 [data-theme="dark"] .badge{border-color:var(--line);background:#102a38;color:#bcd2d8}
 [data-theme="dark"] .filters{background:#0c2330;border-color:var(--line)}
 [data-theme="dark"] .filters input,[data-theme="dark"] .filters select{background:#0a1f2b;border-color:#2a4b59;color:#dbe8ec}
+[data-theme="dark"] .filters button{background:#102a38;border-color:#2a4b59;color:#dbe8ec}
 [data-theme="dark"] .empty{background:#0c2330;border-color:var(--line)}
 [data-theme="dark"] .detail-meta{background:#0c2634;border-color:var(--line);color:#cfe0e5}
 [data-theme="dark"] .detail-meta dd{color:#cfe0e5}
@@ -214,8 +215,8 @@ a{color:inherit}a:hover{color:var(--teal)}
 [data-theme="dark"] .dock{background:#0e2836ea;border-color:var(--line)}
 [data-theme="dark"] .dock a,[data-theme="dark"] .dock button{color:#bcd2d8}
 [data-theme="dark"] .dock a:hover,[data-theme="dark"] .dock button:hover{background:#12313f;color:var(--teal)}
-[data-theme="dark"] .spon-btn{border-color:var(--teal-2);color:var(--teal)}
-[data-theme="dark"] .spon-btn:hover{background:var(--teal-2);color:#04231d}
+[data-theme="dark"] .spon-btn{background:var(--teal-2);color:#052019}
+[data-theme="dark"] .spon-btn:hover{background:#43c9ad;color:#04231d}
 
 @media(max-width:860px){.footer-top{grid-template-columns:1fr 1fr}.spon-band{grid-template-columns:1fr}
   .mega-inner{flex-direction:column;gap:20px}.mega-cols{grid-template-columns:1fr 1fr}
