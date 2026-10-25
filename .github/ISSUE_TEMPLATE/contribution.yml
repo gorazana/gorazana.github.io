@@ -1,0 +1,30 @@
+name: Contribution proposal
+description: Suggest research, documentation or testing support.
+title: '[Contribution proposal] '
+body:
+- type: markdown
+  attributes:
+    value: This issue is PUBLIC. Do not include passwords, tokens, payment details,
+      confidential contracts, personal data or security exploit details. Component
+      terms may not yet be announced.
+- type: input
+  id: component
+  attributes:
+    label: Component or page
+    description: Name the component, page URL or catalog data hash.
+  validations:
+    required: true
+- type: textarea
+  id: request
+  attributes:
+    label: Question or proposal
+    description: Give a public, non-confidential summary.
+  validations:
+    required: true
+- type: checkboxes
+  id: privacy
+  attributes:
+    label: Public information only
+    options:
+    - label: I have not included secrets or confidential/personal information.
+      required: true

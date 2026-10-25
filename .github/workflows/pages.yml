@@ -1,0 +1,40 @@
+name: Deploy public Gorazana showcase
+'on':
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: gorazana-public-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    if: github.repository == 'gorazana/gorazana.github.io' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out public projection only
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Verify and export only manifest-listed public files
+        run: python3 -B scripts/export_pages.py --source . --output "$RUNNER_TEMP/gorazana-pages"
+      - name: Upload only verified public files
+        uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa
+        with:
+          path: ${{ runner.temp }}/gorazana-pages
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy static project documentation
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e

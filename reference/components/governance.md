@@ -1,0 +1,74 @@
+# Governance
+
+Objectives, decisions, policies and accountable actions.
+
+**Kind:** business-module · **Availability:** Research · **Access:** Access unannounced
+
+**Version:** No verified release
+
+Research specification; not a claim that all features ship. Generated from Gorazana/ecosystem, data `c83adc7c4503`.
+
+## Capabilities
+
+- GOVERNANCE-01 — Strategy objectives and measures
+- GOVERNANCE-02 — Proposals, agendas and reviewed decisions
+- GOVERNANCE-03 — Versioned policies and acknowledgements
+- GOVERNANCE-04 — Actions, due dates and escalation
+- GOVERNANCE-05 — Conflict-of-interest and evidence packs
+
+## Native Goravel
+
+- Config
+- ServiceProvider
+- ORM/transactions where durable storage is selected
+- Validation
+- Route/middleware for selected HTTP adapter
+- Events
+- Queue only for asynchronous profile
+- Log
+- Artisan
+
+## Go and candidate adapters
+
+- context
+- encoding/json
+- time
+- errors
+- io; candidate libraries isolated behind tested ports
+
+## Optional integration ports
+
+- [Projects](projects.md)
+- [Workflows](workflows.md)
+- [Documents](documents.md)
+- [Audit](audit.md)
+
+## Invariants
+
+- Attendance alone is not approval authority
+- Published policies retain approved revisions
+- Public decisions cannot leak private evidence
+
+## Acceptance requirements
+
+- Negative and boundary tests for each stated invariant
+- Concurrent/stale revision and duplicate-command tests for the principal transition
+- Real selected database transaction, migration-upgrade and recovery tests
+- Cross-scope list/detail/count/export/relationship checks
+- No real external side effects in ordinary fixtures; live-provider tests separately labeled
+- Selected renderer tested for validation, keyboard, narrow layout and error states
+
+## Boundaries
+
+Owns the stated contract, not another identity, router, ORM, cache or queue engine. Host-specific fields, authority, retention, legal/tax/curriculum rules and credentials remain explicit application profiles. Optional integrations are not mandatory package imports.
+
+## Model and lifecycle
+
+Objective, Measure, Decision, Approval, Meeting, Policy, Revision, Action
+
+Propose -> consult/review -> authorize -> communicate -> execute -> review.
+
+## Research sources
+
+- [OpenProject guide](https://www.openproject.org/docs/user-guide/) — Project, work-package, time/cost and decision vocabulary.
+- [ODK](https://docs.getodk.org/) — Versioned forms and governed field evidence.

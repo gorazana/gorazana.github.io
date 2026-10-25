@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://gorazana.github.io/sitemap.xml
