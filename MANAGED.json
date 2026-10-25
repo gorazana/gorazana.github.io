@@ -279,7 +279,7 @@
     ".nojekyll": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
     "404.html": "130348982cace138a06d8bb3af67880c9472285f29f5822f4a63620a4f4d6fb5",
     "BUILD.json": "6a65fd0b70a33334998c83210442fb083fbcc844bad133463b508fb3d6d716a6",
-    "about.html": "63af38b1e98308d65534ffa9bff19374e183854df18a393601e8cef635d7920b",
+    "about.html": "b8c2402407070b123dea4e2e8a6311030514e1f389e732e0a76a0863505626e5",
     "assets/brands/claude.svg": "3b8074ff69fbb2ce0cccf8d65112b31ba3355691a0cba83ad8cc30ebb95de32a",
     "assets/brands/codex.svg": "74d18dbfb63c3b629b413b016fb97e9a0d568516fbad4b6acea6132fd6853ed3",
     "assets/brands/github.svg": "d90a05997bdeb2d3e061d7f2b1cd243503cdaf167c9973cee8e5dde2d0d6b630",
@@ -375,7 +375,7 @@
     "assets/logo.svg": "1cd3304f01a72fe6a0457aa01b53a5a9cbc6576559f784d400c9cabc73b235da",
     "assets/site.css": "3b4bdaa490bfddf77cce2acda2837ccc5267760ac881d13af62b58313a146fa9",
     "assets/site.js": "db918e34f7eb675b79bf75e8343e78f5949bae583c42a8030bc7434968468044",
-    "catalog.html": "8743afeff2d0905ad7212c3cba3cba10dc195bb6dfffba9a45f5bf096a4d1e77",
+    "catalog.html": "beb10a43ce9de5c7e78ed3933bf22e428985e76119451e48cec4797cc41443f8",
     "components/accounting.html": "8d1b278d601875908a61884c0ff7a92add45f5b552cd9658ec8bda6bdf2d7988",
     "components/accounts.html": "702c750188070330d9ffe502cebd1bf2b9fda9a143e5b92b0f6a4179466ee3d1",
     "components/activity.html": "1ec52def4711dea450df28292d7a87f1a62a937e1925d4fa82a0b0f853b05d97",
@@ -457,8 +457,8 @@
     "components/webhooks.html": "c4e82c02b166075b76524a8b23df69a603d045d4a711f517b8c3bb7718055c91",
     "components/workflows.html": "c681aa271ce921e1f49566881faa2f1148336db3a0c6de39d88fc117d7937b05",
     "data/catalog.json": "67d99f3f175baef9a851df8d886c3eb9086a378a6745d48b5d61f6d35176abb9",
-    "index.html": "c4d420fbae6ac9872ac83e958ade4b4ece7c1e421fe3010b019d8a6fa859be36",
-    "patterns.html": "682892479a6cd354ebed8419f5c28b95d680db02876b25028b9d6b3bce98be8f",
+    "index.html": "2baae355873d7545bb6f0d923924c4e010b19a17962a8165d4f5896cb515d760",
+    "patterns.html": "5a3bc41befa4038ba45bd78ee758c41fe897b8d304278b51aa7fcc360a174949",
     "reference/EXPANSION_REVIEW.md": "3c2dbdc2630561bc4304107e80b57b91b28374334d572fa49f904a7dfc66218e",
     "reference/SHOWCASE_DATA.md": "fcfdd5beeb0072945af69ff5cf191eb1da1d105830b636c6164f3fdef0f65542",
     "reference/SITE_DESIGN.md": "572bffca795b0b9dddee068a374fe7d2aac622f14774f8cd364acd9c8edc33f3",
@@ -542,10 +542,10 @@
     "reference/components/timekeeping.md": "e1ea2cb0328fbdaee51e348e5c228c4d1322c6e255aadb14044950f9c73ccf52",
     "reference/components/webhooks.md": "651974743bd0ee59c287e99043cbadb22cbb4e6f2e1a37e8ff32cc39defc9236",
     "reference/components/workflows.md": "2d1318fe2772c237bc4097d2390cc83c8bd64ae11ffcc67f38eaf95d58876a8b",
-    "releases.html": "a943c7c899ed66c6c734fde7e0a09b80e0025df26f2a10e569180cb0dd95e5c2",
-    "research.html": "847f4c9598b57df5985d5910f6387eb76e6e7f737f67fd6b2a1b827e97383510",
+    "releases.html": "f16702fe03d36aa01f8703d85e225d74d5db40e9cb666f61d50a712d1ae2bc4b",
+    "research.html": "e17abe53e0eeb692ee1e1490d84be7a1ae37b6b1972b2b9577315c741a87f8bb",
     "robots.txt": "f4be85d451b5179803e79b3d23d099403d443dad814a1c5331d5752a7c00e31f",
     "sitemap.xml": "4d75d2eab08a5f43b533299f96ae1ec3dcf96357cdce19c425b39f7a4215fbec",
-    "support.html": "76e24871683caf25567d290c94edcf79d767a86e8b9e315714bf6e93f7574a85"
+    "support.html": "01e49fe34ced5e47a3d480aaee418b6d8232ee675908a3c3e5a267fbe36acc19"
   }
 }
