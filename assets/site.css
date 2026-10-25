@@ -78,7 +78,9 @@ a{color:inherit}a:hover{color:var(--teal)}
 .mega-promo a{font-size:13px;font-weight:600;color:var(--teal);text-decoration:none;display:inline-flex;gap:6px;align-items:center}
 .mega-promo a .chev{transform:rotate(-90deg)}
 
-.button{min-height:46px;border-radius:9px;font-size:13.5px;font-weight:600;gap:11px}
+.button{min-height:46px;border-radius:9px;font-size:13.5px;font-weight:600;gap:11px;background:#fff;color:var(--ink);border-color:var(--line)}
+.button:hover{color:var(--teal)}
+.page-intro .button{box-shadow:0 8px 20px rgba(8,24,32,.25)}
 .button.primary{background:var(--teal-2);color:#04231d;border-color:var(--teal-2)}
 .button.dark{background:var(--deep2);color:#eaf6f4;border-color:var(--deep2)}
 
