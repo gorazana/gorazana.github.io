@@ -6,7 +6,7 @@ Add scoped AI governance, retrieval/extraction jobs, tool permissions, evaluatio
 
 **Version:** No verified release
 
-Research specification; not a claim that all features ship. Generated from Gorazana/ecosystem, data `c90a6091f561`.
+Research specification; not a claim that all features ship. Generated from Gorazana/ecosystem, data `c83adc7c4503`.
 
 ## Capabilities
 

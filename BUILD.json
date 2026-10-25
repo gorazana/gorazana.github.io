@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "canonical_repository": "gorazana/ecosystem",
-  "catalog_hash": "c90a6091f5610ef95d8689f01043e87b2b81c054845eb5f83d41e8dbb804f330",
+  "catalog_hash": "c83adc7c4503872b4fba4b4c5d6108ffaa062b6c5cb1969be7bef34fd61dbddd",
   "entry_count": 80,
   "html_pages": 87,
-  "observations_checked_at": "2026-10-25T20:56:43.931423+00:00",
+  "observations_checked_at": "2026-10-25T16:29:57.453103+00:00",
   "public_projection": true,
   "runtime_acceptance": false
 }
