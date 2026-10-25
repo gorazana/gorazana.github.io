@@ -148,7 +148,9 @@ a{color:inherit}a:hover{color:var(--teal)}
 .prose h2{font-size:26px}.prose p,.prose li{color:#365059;font-size:15.5px}
 .spec-list small{color:var(--teal)}.spec-list li{border-left:2px solid #e0ebed;padding-left:14px}
 .side-nav{border-left:1px solid var(--line)}
-.notice{border-left:3px solid var(--gold);background:#fff8ec;border-radius:0 9px 9px 0}
+.notice{background:none;border:0;border-top:1px solid var(--line);border-radius:0;padding:14px 0 2px;margin:4px 0 22px;color:var(--muted);font-size:13.5px}
+.notice::before{content:"Note";display:block;font:600 10px/1 'Geist Mono',monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--teal);margin-bottom:7px}
+.spon-ico{color:var(--teal-2)}.spon-ico:hover{color:var(--teal)}.spon-ico svg{width:18px;height:18px}
 .version-row{border-bottom:1px solid var(--line)}.version-name{font-weight:600}.version-name span{font-size:12px;color:var(--teal)}
 
 /* sponsorship band */
@@ -211,7 +213,6 @@ a{color:inherit}a:hover{color:var(--teal)}
 [data-theme="dark"] .prose th{background:#0c2330}
 [data-theme="dark"] .spon-aside{background:var(--card);border-color:var(--line)}
 [data-theme="dark"] .slot{background:#0b2531;border-color:#2a4b59}
-[data-theme="dark"] .notice{background:#241f12;color:#e9d7ad}
 [data-theme="dark"] .dock{background:#0e2836ea;border-color:var(--line)}
 [data-theme="dark"] .dock a,[data-theme="dark"] .dock button{color:#bcd2d8}
 [data-theme="dark"] .dock a:hover,[data-theme="dark"] .dock button:hover{background:#12313f;color:var(--teal)}
